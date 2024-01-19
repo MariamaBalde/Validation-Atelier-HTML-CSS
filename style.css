@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -34,25 +40,25 @@ header .secondhead .secondheadpart1 ul {
     text-transform: uppercase;
 }
 
-header .secondhead .secondheadpart3{
+header .secondhead .secondheadpart3 {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-header .secondhead .secondheadpart3 ul{
+header .secondhead .secondheadpart3 ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 10px 0;
 }
 
-header .secondhead .secondheadpart3 select{
-      font-size: 12px;
-      height: 20px;
-      border: none;
-      color: brown;
-      margin: 15px 0;
+header .secondhead .secondheadpart3 select {
+    font-size: 12px;
+    height: 20px;
+    border: none;
+    color: brown;
+    margin: 15px 0;
 }
 
 header .secondhead ul li {
@@ -74,7 +80,7 @@ header .secondhead .secondheadpart3 ul .fa-solid {
 
 /* -----------------------------------------------------Main section banniere----------------------------------- */
 
-main  .bannier{
+main .bannier .bannier-bg {
     width: 100%;
     height: 460px;
     max-height: 800px;
@@ -86,75 +92,188 @@ main  .bannier{
     overflow: hidden;
 }
 
-.bannier .bannier-button{
+.bannier .bannier-bg .bannier-button {
     color: white;
     background-color: dimgray;
     border-radius: 50px;
-border: 1px solid dimgray;
+    border: 1px solid dimgray;
     width: 110px;
     height: 42px;
     position: absolute;
     top: 355px;
     left: 65px;
- 
 }
 
-.bannier p{
-    /* content: ""; */
-    width: 55px;
-    height: 55px;
+ .bannier p {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: absolute;
-    bottom: 0;
-    margin: auto;
-    right: 0;
-    left: 0;
-    box-shadow: 0 0 10px grey;
+      left: 645px;
+      bottom: 2px;
+     text-align: center;
+    box-shadow: 0 0 20px rgb(69, 68, 68);
 }
 
-.bannier p .fa-solid{
-    position: relative;
-    top: 20px;
-    margin: auto;
+.bannier p .fa-solid {
+    position: absolute;
+    left: 16px;
+    top: 17px; 
+    margin: auto;       
     color: brown;
-    left: 20px;
 }
 
 /* -----------------------------------------------------Main section nutriment----------------------------------- */
 
-.nutriment{
-    margin: 80px 0;
+.nutriment {
+    /* margin: 80px 0 100px  0; */
+    position: relative;
+    overflow: hidden;
+   
 }
 
-.nutriment h2{
-   text-align: center;
-   color: brown;
-}
-
-.nutriment .content-nutriment{
-   width: 100%;
-   height: 500px;
-   /* background-color: aqua; */
-   /* display: flex;
-   flex-direction: row; */
-   /* justify-content: space-around; */
-}
-
-.nutriment  .nutriment1{
-  width: 25%;
-   height: 320px; 
-   background-color: rgb(233, 233, 19);
-   /* margin: 80px 10px; */
-   padding-top:10%;
-   margin-top: -350px;
-   margin-left: 100px;
-   background-image: url(ImageAcceuil/organic11.jpeg);
-   /* background-size: cover; */
-}
-
-.nutriment .content-nutriment .paranutriment{
+.nutriment h2 {
+    padding: 80px;
+    padding-bottom: 30px;
     text-align: center;
-    font-weight: bold;
-    /* font-size: 15px; */
+    color: brown;
 }
+
+.nutriment .container{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.nutriment .container .card{
+    width: 260px;
+    /* height: 400px; */
+    margin: 30px;
+}
+
+.nutriment .container .card  .img{
+   height: 250px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+   /* transition: width 2s; */
+ /* animation: myanimate  5s ease; */
+}
+
+.nutriment .container .card  .img:hover {
+  background-image: url(ImageAcceuil/organic3.jpeg);
+  background-size: cover;
+  transition: 2s;
+ }
+
+
+ /* @keyframes myanimate {
+   0%{
+    opacity: 0;
+    transform: scale(2s);
+   }
+
+   100%{
+    opacity: 1;
+    transform: scale();
+   }
+
+  }  */
+
+
+.nutriment .container .card  .para{
+    background-color: white;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.nutriment .container .card  .img1{
+    background-image: url(ImageAcceuil/organic11.jpeg);
+    background-size: cover;
+ }
+
+ .nutriment .container .card  .img2{
+    background-image: url(ImageAcceuil/organic2.jpeg);
+    background-size: cover;
+ }
+
+ .nutriment .container .card  .img3{
+    background-image: url(ImageAcceuil/organic3.jpeg);
+    background-size: cover;
+ }
+
+ .nutriment .container .card  .img4{
+    background-image: url(ImageAcceuil/organic11.jpeg);
+    background-size: cover;
+ }
+
+ .nutriment .container .card h5{
+    /* font-weight: bold; */
+    font-size: 20px;
+    color:#404040;
+ }
+
+ .nutriment .container .card h5,
+ .nutriment .container .card p{
+  text-align: center;
+ }
+
+ .nutriment .container .card p{
+    color: brown;
+ }
+
+ .nutriment .container .card .soulign{
+    color: #404040;
+    text-decoration: line-through;
+ }
+
+ .nutriment  .right,
+ .nutriment  .left{
+    color: rgb(232, 229, 229);
+    font-size: 2rem;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-40%);
+   
+ }
+
+  .right{
+    right: 0.5rem;
+ }
+
+  .left{
+    left: 0.5rem;
+ }
+
+ .nutriment .button{
+position: relative;
+overflow: hidden;
+/* width: 100%; */
+  height: 200px;
+ 
+ }
+
+ .nutriment  .button .nutriment-button {
+    color: white;
+    background-color: dimgray;
+    border-radius: 30px;
+    border: 1px solid dimgray;
+    width: 180px;
+    height: 50px;
+  position: absolute;
+   left: 600px;
+   top: 100px;
+
+   
+}
+
