@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 * {
     margin: 0;
@@ -6,8 +7,8 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'PT Serif', serif;
 }
 
 
@@ -104,33 +105,32 @@ main .bannier .bannier-bg {
     left: 65px;
 }
 
- .bannier p {
+.bannier p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
-      left: 645px;
-      bottom: 2px;
-     text-align: center;
+    left: 645px;
+    bottom: 2px;
+    text-align: center;
     box-shadow: 0 0 20px rgb(69, 68, 68);
 }
 
 .bannier p .fa-solid {
     position: absolute;
     left: 16px;
-    top: 17px; 
-    margin: auto;       
+    top: 17px;
+    margin: auto;
     color: brown;
 }
 
 /* -----------------------------------------------------Main section nutriment----------------------------------- */
 
 .nutriment {
-    /* margin: 80px 0 100px  0; */
     position: relative;
     overflow: hidden;
-   
+
 }
 
 .nutriment h2 {
@@ -140,49 +140,82 @@ main .bannier .bannier-bg {
     color: brown;
 }
 
-.nutriment .container{
+.nutriment .container {
     display: flex;
     justify-content: center;
-  
+
 }
 
-.nutriment .container .card{
+@keyframes slideimage {
+    /* 0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;} */
+
+    0% {
+        background-image: url(images/1.jpeg);
+        background-size: cover;
+    }
+
+    20% {
+        background-image: url(images/2.jpeg);
+        background-size: cover;
+    }
+
+    15% {
+        background-image: url(images/3.jpeg);
+        background-size: cover;
+    }
+
+    20% {
+        background-image: url(images/4.jpeg);
+        background-size: cover;
+    }
+
+    5% {
+        background-image: url(images/5.jpeg);
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(images/6.jpeg);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(images/7.jpeg);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(images/8.jpeg);
+        background-size: cover;
+    }
+}
+
+
+
+.nutriment .container .card {
     width: 260px;
     /* height: 400px; */
     margin: 30px;
 }
 
-.nutriment .container .card  .img{
-   height: 250px;
-   margin-bottom: 30px;
-   position: relative;
-   overflow: hidden;
-   /* transition: width 2s; */
- /* animation: myanimate  5s ease; */
+.nutriment .container .card .img {
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    animation-name: slideimage;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    /* animation-delay: 4s; */
+    /* transition: width 2s; */
+    /* animation: myanimate  5s ease; */
 }
 
-.nutriment .container .card  .img:hover {
-  background-image: url(ImageAcceuil/organic3.jpeg);
-  background-size: cover;
-  transition: 2s;
- }
 
-
- /* @keyframes myanimate {
-   0%{
-    opacity: 0;
-    transform: scale(2s);
-   }
-
-   100%{
-    opacity: 1;
-    transform: scale();
-   }
-
-  }  */
-
-
-.nutriment .container .card  .para{
+.nutriment .container .card .para {
     background-color: white;
     width: 70px;
     height: 25px;
@@ -197,83 +230,263 @@ main .bannier .bannier-bg {
 
 }
 
-.nutriment .container .card  .img1{
+.nutriment .container .card .img1 {
     background-image: url(ImageAcceuil/organic11.jpeg);
     background-size: cover;
- }
+}
 
- .nutriment .container .card  .img2{
+.nutriment .container .card .img1:hover {
+    background-image: url(ImageAcceuil/organic1.jpeg);
+    background-size: cover;
+    transition: 2s;
+}
+
+.nutriment .container .card .img2 {
     background-image: url(ImageAcceuil/organic2.jpeg);
     background-size: cover;
- }
+}
 
- .nutriment .container .card  .img3{
+.nutriment .container .card .img2:hover {
     background-image: url(ImageAcceuil/organic3.jpeg);
     background-size: cover;
- }
+    transition: 2s;
+}
 
- .nutriment .container .card  .img4{
+.nutriment .container .card .img3 {
+    background-image: url(ImageAcceuil/organic3.jpeg);
+    background-size: cover;
+}
+
+.nutriment .container .card .img3:hover {
+    background-image: url(ImageAcceuil/organic2.jpeg);
+    background-size: cover;
+    transition: 2s;
+}
+
+.nutriment .container .card .img4 {
     background-image: url(ImageAcceuil/organic11.jpeg);
     background-size: cover;
- }
+}
 
- .nutriment .container .card h5{
+.nutriment .container .card .img4:hover {
+    background-image: url(ImageAcceuil/organic4.jpeg);
+    background-size: cover;
+    transition: 2s;
+}
+
+.nutriment .container .card h5 {
     /* font-weight: bold; */
     font-size: 20px;
-    color:#404040;
- }
+    color: #404040;
+}
 
- .nutriment .container .card h5,
- .nutriment .container .card p{
-  text-align: center;
- }
+.nutriment .container .card h5,
+.nutriment .container .card p {
+    text-align: center;
+}
 
- .nutriment .container .card p{
+.nutriment .container .card p {
     color: brown;
- }
+}
 
- .nutriment .container .card .soulign{
+.nutriment .container .card .soulign {
     color: #404040;
     text-decoration: line-through;
- }
+}
 
- .nutriment  .right,
- .nutriment  .left{
+.nutriment .right,
+.nutriment .left {
     color: rgb(232, 229, 229);
     font-size: 2rem;
     position: absolute;
     top: 35%;
     transform: translateY(-40%);
-   
- }
 
-  .right{
+}
+
+.right {
     right: 0.5rem;
- }
+}
 
-  .left{
+.left {
     left: 0.5rem;
- }
+}
 
- .nutriment .button{
-position: relative;
-overflow: hidden;
-/* width: 100%; */
-  height: 200px;
- 
- }
 
- .nutriment  .button .nutriment-button {
+/* ---------------------------product------------------------------------------ */
+
+.product {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.product .button {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.product .button .nutriment-button {
     color: white;
     background-color: dimgray;
     border-radius: 30px;
     border: 1px solid dimgray;
     width: 180px;
     height: 50px;
-  position: absolute;
-   left: 600px;
-   top: 100px;
-
-   
 }
 
+.product .productlocal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 30px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.product .productlocal #cook {
+    width: 100%;
+    background-image: url(ImageAcceuil/chef.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition:  2s;
+}
+
+.product .productlocal #cook:hover{
+    transform: scale(1.1);
+}
+
+.product .productlocal #breakfast {
+    background-image: url(ImageAcceuil/breakfast.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition:  2s;
+}
+
+.product .productlocal #breakfast:hover{
+    transform: scale(1.1);
+}
+
+.product .productlocal #snacking {
+    background-image: url(ImageAcceuil/snacking.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition:  2s;
+}
+
+.product .productlocal #snacking:hover{
+    transform: scale(1.1);
+}
+
+.product .productlocal #cook .productpara {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+.product #breakfast .productpara {
+    position: absolute;
+    top: 350px;
+    left: 490px;
+}
+
+.product .productlocal #snacking .productpara {
+    position: absolute;
+    top: 350px;
+    left: 930px;
+}
+
+.product .productlocal #cook .productpara h5,
+.product .productlocal #breakfast .productpara h5,
+.product .productlocal #snacking .productpara h5 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product .productlocal #cook .productpara .product-button,
+.product .productlocal #breakfast .productpara .product-button,
+.product .productlocal #snacking .productpara .product-button {
+    color: dimgray;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+
+.product .agricult .bg-imagricult {
+    width: 100%;
+    height: 500px;
+    background-image: url(ImageAcceuil/grown.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.product .agricult .bg-imagricult .content-paragricult{
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    height: 270px;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    padding: 40px 30px;
+}
+
+.product .agricult .bg-imagricult .content-paragricult h5{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.product .agricult .bg-imagricult .content-paragricult p{
+    font-size: 15px;
+}
+
+.product .agricult .bg-imagricult .content-paragricult .para{
+  padding: 20px 0;
+}
+
+.product .agricult .bg-imagricult .content-paragricult .para-underline{
+   border-bottom: 1px solid black;
+}
+
+.product .agricult .bg-imagricult .content-paragricult .para-underline:hover{
+    border-bottom: none;
+    
+ }
+
+ /* --------------------------------------Customer-------------------------------------- */
+
+ .customer-speak{
+    background-color: whitesmoke;
+    padding: 50px 100px;
+ }
+
+
+ .customer-speak .customer .para-customer #red{
+    text-align: center;
+    color:#b30000;
+    font-weight: bold;
+    font-size: 28px;
+    word-spacing: 0.2rem;
+ }
+
+ .customer-speak .customer .para-customer #blue{
+    text-align: center;
+    color:#121254;
+    font-weight: bold;
+    font-size: 30px;
+ }
