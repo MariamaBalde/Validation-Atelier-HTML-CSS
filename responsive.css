@@ -66,4 +66,47 @@
     left: 100px;
     padding: 40px 30px;
 }
+
+/* -------------------------------------------- .about-us---------------------------------- */
+
+
+.about-us .about .content1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    padding: 0 70px;
+}
+
+.about-us .about .content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    /* gap: 20px; */
+    /* padding: 50px 530px 0 530px; */
+}
+
+/* -------------------------------------------- join---------------------------------- */
+
+
+.join .join-part .join-content .join2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* -------------------------------------------- footer lastpart1---------------------------------- */
+
+footer .lastpart .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px  350px 350px;
+    gap: 5px;
+}
+
+
+footer .lastpart1{
+  text-align: center;
+}
   }

@@ -41,6 +41,12 @@ header .secondhead .secondheadpart1 ul {
     text-transform: uppercase;
 }
 
+/* header .secondhead .secondheadpart1 ul  #link3  #list2{
+   display: flex;
+   flex-direction: column;
+   display: none;
+} */
+
 header .secondhead .secondheadpart3 {
     display: flex;
     flex-direction: row;
@@ -77,9 +83,11 @@ header .secondhead .secondheadpart3 ul .fa-solid {
 }
 
 
-/* -----------------------------------------------------Main----------------------------------- */
+/* ------------------------------------------------------------------------ Main------------------------------------------------------------------------------------------ */
 
-/* -----------------------------------------------------Main section banniere----------------------------------- */
+/* ----------------------------------------------------------------------- Main section banniere ------------------------------------------------------------------------ */
+
+
 
 main .bannier .bannier-bg {
     width: 100%;
@@ -313,7 +321,7 @@ main .bannier .bannier-bg {
 }
 
 
-/* ---------------------------product------------------------------------------ */
+/* ----------------------------------------------------------------------- product ------------------------------------------------------------------------ */
 
 .product {
     margin-top: 50px;
@@ -353,10 +361,10 @@ main .bannier .bannier-bg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    transition:  2s;
+    transition: 2s;
 }
 
-.product .productlocal #cook:hover{
+.product .productlocal #cook:hover {
     transform: scale(1.1);
 }
 
@@ -365,10 +373,10 @@ main .bannier .bannier-bg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    transition:  2s;
+    transition: 2s;
 }
 
-.product .productlocal #breakfast:hover{
+.product .productlocal #breakfast:hover {
     transform: scale(1.1);
 }
 
@@ -377,10 +385,10 @@ main .bannier .bannier-bg {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    transition:  2s;
+    transition: 2s;
 }
 
-.product .productlocal #snacking:hover{
+.product .productlocal #snacking:hover {
     transform: scale(1.1);
 }
 
@@ -434,7 +442,7 @@ main .bannier .bannier-bg {
     overflow: hidden;
 }
 
-.product .agricult .bg-imagricult .content-paragricult{
+.product .agricult .bg-imagricult .content-paragricult {
     text-align: center;
     background-color: white;
     width: 30%;
@@ -446,47 +454,459 @@ main .bannier .bannier-bg {
     padding: 40px 30px;
 }
 
-.product .agricult .bg-imagricult .content-paragricult h5{
+.product .agricult .bg-imagricult .content-paragricult h5 {
     font-size: 17px;
     font-weight: bold;
 }
 
-.product .agricult .bg-imagricult .content-paragricult p{
+.product .agricult .bg-imagricult .content-paragricult p {
     font-size: 15px;
 }
 
-.product .agricult .bg-imagricult .content-paragricult .para{
-  padding: 20px 0;
+.product .agricult .bg-imagricult .content-paragricult .para {
+    padding: 20px 0;
 }
 
-.product .agricult .bg-imagricult .content-paragricult .para-underline{
-   border-bottom: 1px solid black;
+.product .agricult .bg-imagricult .content-paragricult .para-underline {
+    border-bottom: 1px solid black;
 }
 
-.product .agricult .bg-imagricult .content-paragricult .para-underline:hover{
+.product .agricult .bg-imagricult .content-paragricult .para-underline:hover {
     border-bottom: none;
-    
- }
 
- /* --------------------------------------Customer-------------------------------------- */
+}
 
- .customer-speak{
+/* ----------------------------------------------------------------------- Customer ------------------------------------------------------------------------ */
+
+
+.customer-speak {
     background-color: whitesmoke;
-    padding: 50px 100px;
- }
+    /* padding: 50px 260px; */
+    padding: 50px 260px 0 260px;
+    position: relative;
+    overflow: hidden;
+}
 
 
- .customer-speak .customer .para-customer #red{
+.customer-speak .customer .para-customer #red {
     text-align: center;
-    color:#b30000;
+    color: #b30000;
     font-weight: bold;
     font-size: 28px;
     word-spacing: 0.2rem;
- }
+}
 
- .customer-speak .customer .para-customer #blue{
+.customer-speak .customer .para-customer #blue {
     text-align: center;
-    color:#121254;
+    color: #121254;
     font-weight: bold;
     font-size: 30px;
+}
+
+
+
+.customer-speak .right {
+    color: rgb(232, 229, 229);
+    font-size: 2rem;
+    position: absolute;
+    top: 35%;
+    right: 10rem;
+    transform: translateY(-40%);
+}
+
+.customer-speak .left {
+    color: rgb(232, 229, 229);
+    font-size: 2rem;
+    position: absolute;
+    top: 35%;
+    left: 10rem;
+    transform: translateY(-40%);
+}
+
+.customer-speak .customer-product .product-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 7px;
+    padding-top: 25px;
+    position: relative;
+    overflow: hidden;
+    /* animation: slider 12s infinite ease-in-out; */
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(2em);
+    }
+
+    11% {
+        /* transform: translateX(5); */
+        transform: translateX(10em);
+    }
+
+    12% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    11% {
+        transform: translateX(5);
+    }
+
+    100% {
+        transform: translateX(5);
+    }
+}
+
+.customer-speak .customer-product .product-item .items img {
+    width: 250px;
+    height: 220px;
+    position: relative;
+    /* overflow: hidden; */
+    animation: slider 12s 2 normal;
+}
+
+.customer-speak .customer-product .product-item .items .para-customer {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.customer-speak .customer-product .product-item .items .para-customer h5 {
+    color: #121254;
+    font-size: 18px;
+    font-weight: bold;
+    /* text-align: start; */
+}
+
+.customer-speak .customer-product .product-item .items .para-customer h6 {
+    color: #b30000;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 17px;
+}
+
+.customer-speak .customer-product .product-item .items .para-customer p i {
+    color: #f6a2b3;
+}
+
+.customer-speak .customer-product .product-item .items .para-customer #p1 {
+    font-size: 18px;
+}
+
+.customer-speak .customer-product .product-item .items .para-customer span {
+    font-size: 15px;
+}
+
+/* ----------------------------------------------------------------------- delicious ------------------------------------------------------------------------ */
+
+.delicious {
+    margin: 70px 0;
+}
+
+.delicious .delicious-recipes {
+    width: 100%;
+    height: 670px;
+    background-image: url(ImageAcceuil/bannire-delicious.jpeg);
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.delicious .delicious-recipes h3 {
+    text-align: center;
+    color: #b30000;
+    padding-bottom: 35px;
+}
+
+.delicious .delicious-recipes button {
+    text-align: center;
+    position: absolute;
+    left: 650px;
+    background-color: white;
+    padding: 8px 17px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.delicious .delicious-recipes .delicious-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    gap: 80px;
+    position: relative;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.delicious .delicious-recipes .delicious-list .delicious-item img {
+    width: 270px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.delicious .delicious-recipes .delicious-list .delicious-item .paradelicious {
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    padding: 10px;
+}
+
+.delicious .delicious-recipes .delicious-list .delicious-item #para1 {
+    padding: 10px 49px 10px 10px;
+}
+
+
+.delicious .delicious-recipes .delicious-list .delicious-item #para2 {
+    padding: 10px 65px 10px 10px;
+}
+
+.delicious .delicious-recipes .delicious-list .delicious-item .paradelicious p {
+    color: whitesmoke;
+}
+
+/* ----------------------------------------------------------------------- about-us ------------------------------------------------------------------------ */
+
+.about-us {
+    margin-bottom: 70px;
+}
+
+.about-us .about .content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    padding: 0 70px;
+}
+
+.about-us .about .content1 img {
+    width: 550px;
+    height: 500px;
+}
+
+.about-us .about .content1 .aboutpara {
+    padding-top: 200px;
+}
+
+.about-us .about .aboutpara #heading1 {
+    margin-bottom: 30px;
+    color: #b30000;
+}
+
+.about-us .about .aboutpara p {
+    font-size: 15px;
+    line-height: 1.2rem;
+    color: grey;
+}
+
+.about-us .about .aboutpara #heading2 {
+    margin-top: 40px;
+    color: #b30000;
+}
+
+.about-us .about .content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    gap: 20px;
+    padding: 50px 530px 0 530px;
+}
+
+.about-us .about .content2 a {
+    text-decoration: none;
+    color: grey;
+}
+
+.about-us .about .content2 #link1 {
+    text-decoration: underline;
+    color: #b30000;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------- join ------------------------------------------------------------------------ */
+
+.join .join-part {
+    width: 100%;
+    height: 470px;
+    background-image: url(ImageAcceuil/banniere-familly.jpeg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+}
+
+.join .join-part .join-content {
+    text-align: center;
+    color: white;
+    padding: 150px 0;
+}
+
+.join .join-part .join-content .join1 p {
+    padding: 30px 0;
+    font-size: 15px;
+    line-height: 1.2rem;
+}
+
+.join .join-part .join-content .join2{
+    display: flex;
+    flex-direction: row;
+} 
+
+.join .join-part .join-content .join2 input {
+    width: 380px;
+    height: 46px;
+    border: 1px solid #009999;
+    border-radius: 10px;
+    outline: none;
+}
+
+.join .join-part .join-content .join2 input::placeholder {
+    padding-left: 15px;
+}
+
+.join .join-part .join-content .join2 button {
+    width: 120px;
+    height: 46px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 17px;
+    margin-left: 15px;
+}
+
+/* ----------------------------------------------------------------------- footer ------------------------------------------------------------------------ */
+
+footer .lastpart {
+    width: 100%;
+    min-height: 400px;
+    background-color: #f1baa7;
+    padding: 40px 80px;
+}
+
+footer .lastpart .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px;
+}
+
+footer .lastpart .content .content1 #heading1 {
+    padding-bottom: 15px;
+    color: rgb(53, 52, 52);
+    word-spacing: 0.2rem;
+}
+
+footer .lastpart .content .content1 p {
+    padding-bottom: 25px;
+    color: rgb(53, 52, 52);
+    font-size: 16px;
+    line-height: 1.2rem;
+}
+
+footer .lastpart .content .content1 #heading2 {
+    padding: 20px 0;
+    color: rgb(53, 52, 52);
+    word-spacing: 0.2rem;
+}
+
+footer .lastpart .content .content1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer .lastpart .content .content1 ul li {
+    list-style: none;
+}
+
+footer .lastpart .content .content1 ul li a {
+    color: rgb(53, 52, 52);
+}
+
+
+footer .lastpart .content .content1 .site-item{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
  }
+
+ footer .lastpart .content .content1  .site-item ul{
+    display: flex;
+    flex-direction: column;
+ }
+
+ footer .lastpart .content .content1  .site-item ul a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #b30000;
+    font-weight: bolder;
+ }
+
+ footer .lastpart .content .content1  .site-item ul a:hover{
+    color: rgb(53, 52, 52);
+ }
+
+ footer .lastpart .content .content1 .submision{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ footer .lastpart .content .content1 .submision input{
+    width: 250px;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+   }
+
+   footer .lastpart .content .content1 .submision input::placeholder{
+     padding-left: 15px;
+   }
+
+   footer .lastpart .content .content1 .submision button{
+    width: 120px;
+    height: 45px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: dimgrey;
+    color: white;
+   }
+
+
+footer .lastpart1 {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+footer .lastpart1 select {
+    color: grey;
+    border: none;
+    font-weight: bolder;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+footer .lastpart1 p {
+    margin-top: 8px;
+    font-size: 15px;
+}
