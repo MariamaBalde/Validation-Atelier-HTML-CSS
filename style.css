@@ -797,7 +797,7 @@ main .bannier .bannier-bg {
 
 footer .lastpart {
     width: 100%;
-    min-height: 400px;
+    height: 400px;
     background-color: #f1baa7;
     padding: 40px 80px;
 }
