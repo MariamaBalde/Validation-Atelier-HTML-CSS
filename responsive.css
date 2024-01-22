@@ -96,6 +96,24 @@
   text-align: center;
 }
 
+main .recipe-product .recipe-product-item{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 400px 400px 400px 400px ;
+    gap:10px ;
+}
+
+main .recipe-product1 .recipe-product-item1{
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: 400px ;
+    gap:10px ;
+}
+main .recipe-product,
+main .recipe-product1{
+    padding: 0 50px;
+}
+
 /* -------------------------------------------- footer lastpart1---------------------------------- */
 
 footer .lastpart .content {
@@ -103,6 +121,13 @@ footer .lastpart .content {
     grid-template-columns: 1fr;
     grid-template-rows: 350px  350px 350px;
     gap: 5px;
+}
+
+footer .lastpart {
+    width: 100%;
+   max-height: 400px;
+    background-color: #f1baa7;
+    padding: 40px 80px;
 }
 
 
