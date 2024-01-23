@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+main h3{
+    text-align: center;
+    color: #b30000;
+    padding: 50px 0;
+}
+
+main .table{
+    border: 1px solid grey;
+    margin-bottom: 50px;
+
+}
+
+main .table .item-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    font-size: 15px;
+
+}
+
+main .table .item-table select{
+border-top: none;
+border-bottom: none;
+padding: 20px;
+}
+
+main .table .item-table p{
+    padding: 20px;
+}
+
+main .recipe-product,
+main .recipe-product1{
+    padding: 0 50px;
+}
+
+main .recipe-product .recipe-product-item{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 400px 400px 400px 400px ;
+    gap:10px ;
+}
+
+main .recipe-product1 .recipe-product-item1{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 400px ;
+    gap:10px ;
+}
+
+
+main .recipe-product .recipe-product-item .product-items img,
+main .recipe-product1 .recipe-product-item1 .product-items img{
+    width: 280px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop,
+main .recipe-product1 .recipe-product-item1 .product-items .para-shop{
+    text-align: center;
+    padding-top: 7px;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop h5 ,
+main .recipe-product1 .recipe-product-item1 .product-items .para-shop h5{
+    color: #121254;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop h6 ,
+main .recipe-product1 .recipe-product-item1 .product-items .para-shop h6{
+    color: #b30000;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 17px;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop p i,
+main .recipe-product1 .recipe-product-item1 .product-items .para-shop p i {
+    color: #f6a2b3;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop #p1 {
+    font-size: 18px;
+}
+
+main .recipe-product .recipe-product-item .product-items .para-shop span {
+    font-size: 15px;
+}
