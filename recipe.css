@@ -1,21 +1,13 @@
- /* body {
+*{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-} */
-header {
-    background-color: white;
-    color:#333;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    font-size: small;
+} 
 
-
-}  
 h1,h3{
     color: brown;
     text-align: center;
+    
 }
 
 .container{
@@ -37,22 +29,28 @@ img{
     width: 200px;
     
 } 
+h1{
+    font-size: large;
+    
+}
 
 
 button{
     padding: 6px;
     background-color:gray;
     color: white;
-    border-radius: 8px;
+    border-radius:0%;
     margin: 0 auto;
     text-align: center;
     font-size: 10px;
-    margin-left: 65px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+    border-color:gray;
     
 }
 button:hover{
     background-color:white;
-    color:black;
+    color:grey;
 }
 .dkh1{
     display: flex;
@@ -68,7 +66,7 @@ p{
     }
 
 
- @media screen and (max-width:600px) {
+ @media screen and(max-width:600px) {
         body{
         display: flex;
         flex-direction: row;
