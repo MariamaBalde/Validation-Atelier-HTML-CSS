@@ -9,6 +9,7 @@ h1{
     text-align: center;
     color: rgb(210, 26, 26);
     font-size: 1em;
+    margin-bottom: 8px;
 }
 .grand{
     max-width: 100%;
